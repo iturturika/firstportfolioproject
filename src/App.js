@@ -31,7 +31,7 @@ import lightThemeBurger from './images/lightBurger.svg';
 
 function App() {
   const [onClickBurger, setOnClickBurger] = React.useState(false);
-  const [isDark, setIsDark] = React.useState(true);
+  const [isDark, setIsDark] = React.useState(false);
 
   return (
     <div className="App" style={isDark ? { backgroundColor: '#171717' } : {}}>
