@@ -1,0 +1,90 @@
+@import '../../scss/colors.scss';
+
+.course{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 355px;
+  position: relative;
+  padding: 16px;
+  border: 2px solid $border-color;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: $text-color;
+  }
+  p{
+    font-size: 14px;
+    font-weight: 400;
+    color: $additional-text-color;
+  }
+}
+
+.course-img-wrap{
+  img{
+    position: relative;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+  }
+}
+
+.course-img-topic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 117px;
+  height: 30px;
+  background-color: $active-color;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  top: 30px;
+  left: 30px;
+}
+
+.course-duration{
+  display: flex;
+  align-items: center;
+}
+
+.course-button{
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: $active-color;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1470px) {
+  .course{
+    min-width: 355px;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .course{
+    min-width: 300px;
+    width: 300px;
+  }
+}

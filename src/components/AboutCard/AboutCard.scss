@@ -1,0 +1,56 @@
+@import '../../scss/colors.scss';
+
+.about-card{
+  width: 1470px;
+  display: flex;
+  column-gap: 200px;
+}
+
+.about-card-info{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  h6{
+    color: $text-color;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0;
+  }
+  p{
+    color: $additional-text-color;
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 1470px) {
+  .about-card{
+    width: 864px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    img{
+      width: 500px;
+      height: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .about-card{
+    width: 401px;
+    h6{
+      font-size: 30px;
+    }
+    p{
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .about-card{
+    width: 300px;
+  }
+}

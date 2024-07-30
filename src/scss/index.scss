@@ -1,9 +1,14 @@
 @import './normalize.scss';
 @import './fonts.scss';
+@import './colors.scss';
 
 *{
   font-family: "Inter Tight", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 18px;
+}
+
+body {
+  overflow-x: hidden;
 }
